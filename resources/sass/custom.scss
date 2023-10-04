@@ -1,0 +1,129 @@
+//custom classes
+@import "custom/variables";
+// Bootstrap
+@import 'modules/bootstrap';
+
+//custom base classes
+@import "custom/base";
+@import "custom/editor";
+@import "custom/button";
+
+// header
+@import "custom/header";
+
+@import "responsive";
+
+//hero styles
+.hero_image{
+  background: rgb(190,215,48);
+  background: radial-gradient(circle, rgba(190,215,48,1) 0%, rgba(0,124,46,0) 50%);
+}
+
+.followSocial{
+  width: 70px;
+  height: 70px;
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.49);
+  &:after{
+    content: '';
+    box-shadow: 0px 4px 0px 0px #deff00 inset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  &:hover{
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.49);
+    transform: scale(1.1);
+  }
+}
+
+.titleHeading {
+  &:before {
+    content: '';
+    background-color: #deff00;
+    position: absolute;
+    height: 3px;
+    width: 55px;
+    top: 50%;
+    right: +100%;
+    border-radius: 50%;
+    opacity: 70%;
+  }
+  &:after{
+    content: '';
+    background-color: #deff00;
+    position: absolute;
+    height: 3px;
+    width: 55px;
+    top: 50%;
+    left: +100%;
+    border-radius: 50%;
+    opacity: 70%;
+  }
+}
+
+.titleHeading1 {
+  &:before {
+    content: '';
+    background-color: #deff00;
+    position: absolute;
+    height: 3px;
+    width: 55px;
+    top: 50%;
+    right: +100%;
+    border-radius: 50%;
+    opacity: 70%;
+  }
+  &:after{
+    content: '';
+    background-color: #deff00;
+    position: absolute;
+    height: 3px;
+    width: 55px;
+    top: 50%;
+    left: +100%;
+    border-radius: 50%;
+    opacity: 70%;
+  }
+}
+
+.countdown-item,
+.buttonInsta{
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.49);
+  &:hover{
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.49);
+    transform: scale(1.1);
+  }
+}
+
+.customSize{
+  transform: scale(.85) !important;
+}
+
+.blink-soft {
+  animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.customNotif{
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  padding: 25px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+  z-index: 100;
+  bottom: 0;
+  transition: all 0.8s ease-in-out;
+  transform: translateY(100px);
+}
+.notification-show{
+  transform: translateY(0px)!important;
+}

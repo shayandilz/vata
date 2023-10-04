@@ -1,0 +1,68 @@
+//COLOR
+$body-color: #000000;
+$body-text: #5E6972;
+$light: rgba(255, 255, 255, 0.5);
+$dark: rgba(26, 25, 29, 0.95);
+
+
+$primary: #007c2e;
+$secondary: #a6ce39;
+$danger: #005f1b;
+//base class variables
+$transition-base: all .4s;
+$transition-fast: all .2s ease-in-out;
+$transition: all .4s ease-in-out;
+$transition-slow: all .6s;
+
+//FONTS
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-semibold: 700;
+$font-weight-base: $font-weight-normal;
+
+$min-contrast-ratio: 2.5;
+$font-family-base: Yekan, 'sans-serif', 'Nunito';
+$font-size-base: 1.14rem * calc(14/16);
+$small-font-size: .875rem  * calc(14/16);
+$line-height-base: 1.5;
+$line-height-lg: 1.7;
+$line-height-sm: 0;
+
+$enable-smooth-scroll: true;
+$enable-negative-margins: true;
+$stretched-link-z-index: 1;
+$border-radius-xxl:3rem;
+$border-radius-lg: 2rem;
+
+//link
+$link-decoration: none;
+$link-hover-decoration: none;
+$link-color: #fff;
+$nav-link-font-size:14px;
+$nav-link-color: #000;
+
+  //tabs
+$nav-tabs-link-active-bg: $primary;
+$nav-tabs-link-active-color:#fff;
+
+//navbar
+$nav-link-color: $body-color;
+
+$display-font-sizes:(
+        1: 7rem,
+        2: 6.5rem,
+        3: 4rem,
+        4: 3.5rem,
+        5: 3rem,
+        6: 2.5rem
+);
+
+//container
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1530px
+);
+

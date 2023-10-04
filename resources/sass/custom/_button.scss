@@ -1,0 +1,118 @@
+//
+// Base styles
+//
+
+.btn {
+  display: inline-block;
+  font-family: $btn-font-family;
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  color: $body-text;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+  @include transition($btn-transition);
+  outline: 0 !important;
+  z-index: 1;
+  position: relative;
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    pointer-events: none;
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+}
+
+@mixin dynamic-button($bg-color, $text-color) {
+  a {
+    color: $text-color;
+    &:after {
+      background-color:$bg-color;
+      bottom: -5px;
+      content: "";
+      height: 2px;
+      right: 0;
+      margin-top: auto;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+      width: 100%;
+    }
+    &:hover:after {
+      opacity: 1;
+      transform: scaleX(1);
+      transform-origin: left;
+      span {
+        height: 100%;
+        top: 0;
+      }
+    }
+    &:active {
+      outline: none;
+      border: none;
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+// Define classes for different button colors
+.button-white {
+  @include dynamic-button($white, white);
+}
+
+.button-primary {
+  @include dynamic-button(#00B3AC, black);
+}
+
+@mixin dynamic-icon($icon-color) {
+  a {
+    i{
+      transition: all 265ms ease-out;
+    }
+    &:hover:before {
+      transform: scale(0);
+      transition: all 265ms ease-in;
+    }
+    &:before {
+      transform: scale(1);
+      content: " ";
+      border: 1px solid $icon-color;
+      border-radius: 100%;
+      display: block;
+      transition: all 265ms ease-out;
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 0;
+      bottom: 1px;
+    }
+    &:hover i {
+      transform: scale(1.4);
+      border-style: none;
+      transition: all 265ms ease-in;
+    }
+  }
+}
+
+.icon-white {
+  @include dynamic-icon(#ffffff);
+}
+
+.icon-dark {
+  @include dynamic-icon(#00B3AC);
+}
+
+

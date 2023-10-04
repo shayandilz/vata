@@ -1,0 +1,62 @@
+@include media-breakpoint-up(lg) {
+    .prizeBox{
+      margin-right: -30px;
+      z-index: 9;
+      box-shadow: 0px 0px 10px -5px #fff;
+    }
+}
+@include media-breakpoint-down(lg) {
+  .prizeBox{
+    margin-bottom: -30px;
+    z-index: 9;
+    box-shadow: 0px 0px 10px -5px #fff;
+  }
+  .min-vh-75{
+    min-height: 40vh!important;
+  }
+  .titleHeading {
+    &:before {
+      width: 30px!important;
+    }
+    &:after{
+      width: 30px!important;
+    }
+  }
+  .countdown-item{
+    width: 65px!important;
+    height: 80px!important;
+  }
+  .titleHeading{
+    width: calc(100% - 60px)!important;
+  }
+}
+@include media-breakpoint-down(xl) {
+}
+@include media-breakpoint-down(sm) {
+  .fs-1 {
+    font-size: calc(1.125rem + 1.4vw) !important;
+  }
+  .fs-2 {
+    font-size: calc(1.275rem + 0.8vw) !important;
+  }
+  .fs-3 {
+    font-size: calc(1.25rem + 0.5vw) !important;
+  }
+  .fs-4 {
+    font-size: calc(1.225rem + 0.2vw) !important;
+  }
+  .fs-5 {
+    font-size: 1.2rem !important;
+  }
+  .fs-6 {
+    font-size: 1rem !important;
+  }
+  small, .small {
+    font-size: 0.875rem !important;
+  }
+}
+
+@include media-breakpoint-up(md) {
+}
+@include media-breakpoint-down(md) {
+}

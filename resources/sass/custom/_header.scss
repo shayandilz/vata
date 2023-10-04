@@ -1,0 +1,18 @@
+
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 90%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Usage
+.custom-container {
+  @include make-container();
+}
+//mobile menu
+@media only screen and (max-width: 992px) {
+
+}
+

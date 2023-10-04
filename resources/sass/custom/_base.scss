@@ -1,0 +1,85 @@
+html, body {
+  overflow-x: hidden;
+  padding: 0px!important;
+  margin: 0px!important;
+  scroll-behavior: smooth;
+}
+ul{
+  line-height: 1.7!important;
+}
+*::selection , a::selection {
+  background-color: $primary;
+  color: white;
+}
+// SCROLL bar styles
+::-webkit-scrollbar {
+  width: 6px;
+  height: 0;
+}
+::-webkit-scrollbar-track {
+  background: $white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary;
+  border-radius: 2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+}
+//custom css
+a {
+  text-decoration: none !important;
+}
+.object-fit {
+  object-fit: cover;
+}
+.text-justify {
+  text-align: justify;
+}
+.lazy {
+  transition: all 0.3s ease-in-out;
+}
+.z--1 {
+  z-index: -1;
+}
+.margin-t-80{
+  margin-top: 80px;
+}
+.z-top {
+  z-index: 10;
+}
+.min-vh-50 {
+  min-height: 50vh;
+}
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.all-white a{
+  h1, h2, h3, h4, h5, h6, p, div, span , a {
+    color: white !important
+  }
+}
+.all-dark a {
+  h1, h2, h3, h4, h5, h6, p, div, span , a {
+    color: black !important
+  }
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+ul li{
+  padding-left: 2px;
+}
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #A6CE39; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-right: 0.1em; /* Also needed for space (tweak if needed) */
+}
+

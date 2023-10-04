@@ -1,0 +1,32 @@
+.editor {
+    h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+        margin-bottom: 1rem;
+    }
+}
+strong{
+    font-weight: 600!important;
+}
+
+//list styles
+ol {
+    list-style-type: urdu !important;
+    //counter-reset: section;
+
+    //li:before {
+    //    counter-increment: step-counter;
+    //    content: counter(step-counter);
+    //    margin-right: 10px;
+    //    background: $secondary;
+    //    border-radius: 100%;
+    //    color: white;
+    //    width: 1.2em;
+    //    text-align: center;
+    //    display: inline-block;
+    //}
+}
+
+ul, ol {
+    padding: 0;
+    list-style-position: inside !important;
+    line-height: 2;
+}
